@@ -1,0 +1,14 @@
+url: https://clean-oryx.cloudvent.net
+
+sass:
+  style: compressed
+
+people_collections:
+  - judges
+  - mentors
+
+collections:
+  judges:
+    _hide_content: true
+  mentors:
+    _hide_content: true

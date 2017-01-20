@@ -1,0 +1,86 @@
+---
+---
+
+body {
+  font-size: 1.125em;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+               'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+
+$background-gradient: linear-gradient(74deg, #6248b1, #8055bb, #7b4bc4);
+
+.us-ignite-header {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.us-ignite-social-links a {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.us-ignite-cityscape {
+  background-image: $background-gradient;
+  background-image: url("/images/bg_cityscape.png"), $background-gradient;
+  background-position: center center;
+  background-size: cover;
+}
+
+.us-ignite-summary {
+  position: relative;
+
+  &::before, &::after {
+    background-image: url("/images/bg_art_datastream.png");
+    background-image: image-set(url("/images/bg_art_datastream.png") 1x,
+      url("/images/bg_art_datastream_2x.png") 2x);
+    background-repeat: no-repeat;
+    content: "";
+    height: 241px;
+    width: 550px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    left: 35%;
+    top: -140px;
+    max-width: 65%;
+    background-position: right top;
+  }
+
+  &::after {
+    left: 0;
+    bottom: -140px;
+    max-width: 100%;
+  }
+}
+
+.us-ignite-events {
+  background-image: $background-gradient;
+}
+
+.us-ignite-event {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.us-ignite-timeline {
+  background-image: url("/images/bg_pattern_halftone_clouds.jpg");
+}
+
+.us-ignite-footer {
+
+  p {
+    line-height: 1.3em;
+    margin: 0.5em 0;
+  }
+
+  a {
+    color: #eeeeee;
+    text-decoration: underline;
+
+    &:hover, &:visited, &:active {
+      color: #eeeeee;
+    }
+  }
+}

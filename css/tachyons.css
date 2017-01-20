@@ -1,0 +1,24 @@
+/*
+  To rebuild (run commands from project root):;
+
+    $ npm install
+    $ tachyons css/tachyons.css -m > css/tachyons.min.css
+
+  For convenience, package.json also defines `$ npm run build` and `$ npm run build:watch`.
+*/
+
+@import "tachyons-custom/src/tachyons";
+
+/* https://github.com/tachyons-css/tachyons-custom/blob/master/src/_variables.css */
+
+@custom-media --breakpoint-not-small screen and (min-width: 45em);
+
+:root {
+  --max-width-8: 72rem;
+  --near-black: #232323;
+  --dark-gray: #454552;
+  --light-gray: #C2C2C2;
+  --purple: #554877;
+  --light-purple: #794fb9;
+  --light-green: #9ff5dc;
+}
