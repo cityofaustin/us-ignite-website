@@ -1,7 +1,13 @@
 {
   "name": "us-ignite-website",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "iOS > 8",
+    "IE > 9"
+  ],
   "devDependencies": {
-    "tachyons-cli": "^0.5.0",
+    "tachyons-cli": "^1.0.10",
     "tachyons-custom": "^4.5.4"
   },
   "scripts": {
