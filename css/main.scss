@@ -14,6 +14,11 @@ $background-gradient: linear-gradient(74deg, #6248b1, #8055bb, #7b4bc4);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
+.us-ignite-header * {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
 .us-ignite-social-links a {
   width: 1.5rem;
   height: 1.5rem;
